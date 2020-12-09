@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula HTML </HTML></title>
-    <link rel="stylesheet" href="index.css">
-    
-    
-    <style>
-        /* #bloco {
+    <title>Aula HTML
+
+</HTML>
+</title>
+<link rel="stylesheet" href="index.css">
+
+
+<style>
+    /* #bloco {
             color: blue;
             text-shadow: 2px 2px 2px red;
         }
@@ -16,26 +20,51 @@
         .bloco {
             background-color: green;
             color: white !important;
+            }
             
-        }
+    
 
             .tamFonte {
                 font-size: 22px;
             } */
-
-        
-    </style>
+</style>
 </head>
+
 <body>
     <!--atributo inline-->
-   <H1 style="color: crimson; text-shadow: 2px 3px 2px blue;">Minha pagina inicial</H1>
-   <!-- atributo em bloco -->
-   <br>
-   <H1 class="bloco tamfonte">Minha pagina2 inicial</H1>
-   <br>
-   <H1 class="bloco tamfonte" >Minha pagina3 inicial</H1>
-   
-   <p>Este é meu primeiro parágrafo</p>
-<br>
+    <H1 style="color: crimson; text-shadow: 2px 3px 2px blue;">Minha pagina inicial</H1>
+    <!-- atributo em bloco -->
+    <br>
+    <H1 class="bloco tamfonte">Minha pagina2 inicial</H1>
+    <br>
+    <h1 id="titulo" class="bloco tamFont">minha pagina inicial</h1>
+
+    <H1 class="bloco tamfonte">Minha pagina3 inicial</H1>
+    <p id="mudartexto">Este é meu primeiro parágrafo</p>
+    <button onclick="mudartexto()">Mudar</button>
+    <button onclick="alguma coisa">Limpartexto </button>
+    <input type="text" name="texto" id="campo">
 </body>
+<script>
+    function mudartexto() {
+
+        var txt = document.getElementById('titulo').innerHTML 
+        console.log(txt)
+        document.getElementById('mudartexto').innerHTML = txt
+        document.getElementById('mudartexto').style.color = 'red'
+}
+function inserirtexto () {
+    var texto = "Fhenox"
+    document.getElementById('campo').value = texto
+}
+function inserirtexto() {
+    document.getElementById ('campo').value = ''
+    
+}
+    
+}
+    
+}
+</script>
+
 </html>
