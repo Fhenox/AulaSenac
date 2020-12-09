@@ -41,26 +41,28 @@
 
     <H1 class="bloco tamfonte">Minha pagina3 inicial</H1>
     <p id="mudartexto">Este é meu primeiro parágrafo</p>
-    <button onclick="mudartexto()">Mudar</button>
-    <button onclick="alguma coisa">Limpartexto </button>
+
+    <button onclick="mudartexto()">mudar</button><br><br>
+    <button onclick="inserirtexto()">inserir</button>
+    <button onclick="limpartexto()">limpar</button>
     <input type="text" name="texto" id="campo">
 </body>
 <script>
     function mudartexto() {
 
-        var txt = document.getElementById('titulo').innerHTML 
+        var txt = document.getElementById('titulo').innerHTML
         console.log(txt)
         document.getElementById('mudartexto').innerHTML = txt
         document.getElementById('mudartexto').style.color = 'red'
-}
-function inserirtexto () {
-    var texto = "Fhenox"
-    document.getElementById('campo').value = texto
-}
-function inserirtexto() {
-    document.getElementById ('campo').value = ''
-    
-}
+    }
+    function inserirtexto() {
+        var texto = "Fhenox"
+        document.getElementById('campo').value = texto
+    }
+    function inserirtexto() {
+        document.getElementById('campo').value = ''
+
+    }
     
 }
     
